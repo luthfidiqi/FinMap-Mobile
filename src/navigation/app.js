@@ -3,14 +3,14 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
-import Home from '../screen/Home';
+import Overview from '../screen/Overview';
 
 export default function AppNavigator() {
   return (
     <Stack.Navigator initialRouteName="App">
       <Stack.Screen
-        component={Home}
-        name="Home"
+        component={Overview}
+        name="Overview"
         options={{
           headerShown: false,
         }}
