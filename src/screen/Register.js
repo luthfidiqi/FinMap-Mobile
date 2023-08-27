@@ -9,17 +9,15 @@ import {
   StyleSheet,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-// import Card from '../../components/Card';
-// import styles from './styles';
 
-function Register(props) {
+function Register() {
   const navigation = useNavigation();
   const handleLogin = () => {
-    props.navigation.navigate('Login');
+    navigation.navigate('Login');
   };
 
   const handleRegister = () => {
-    props.navigation.navigate('Login');
+    navigation.navigate('Login');
   };
 
   const [inputValue, setInputValue] = useState('');

@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-function ForgotPassword(props) {
+function ForgotPassword() {
   const navigation = useNavigation();
 
   const handleSend = () => {
-    props.navigation.navigate('UpdatePassword');
+    navigation.navigate('UpdatePassword');
   };
 
   const [inputValue, setInputValue] = useState('');

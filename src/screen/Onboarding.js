@@ -11,13 +11,16 @@ import {
 } from 'react-native';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
 
-function LoginScreen(props) {
+import {useNavigation} from '@react-navigation/native';
+
+function LoginScreen() {
+  const navigation = useNavigation();
   const handleLogin = () => {
-    props.navigation.navigate('Login');
+    navigation.navigate('Login');
   };
 
   const handleRegister = () => {
-    props.navigation.navigate('Register');
+    navigation.navigate('Register');
   };
 
   const handleInputChange = text => {

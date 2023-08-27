@@ -11,7 +11,9 @@ import UpdatePassword from '../screen/UpdatePassword';
 
 export default function AuthNavigator() {
   return (
-    <Stack.Navigator initialRouteName="Auth">
+    <Stack.Navigator
+      initialRouteName="Auth"
+      screenOptions={{animation: 'none'}}>
       <Stack.Screen
         component={Onboarding}
         name="Onboarding"

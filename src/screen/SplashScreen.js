@@ -1,8 +1,10 @@
 import React, {useEffect} from 'react';
 import {View, Text, ImageBackground, Image, StyleSheet} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useNavigation} from '@react-navigation/native';
 
-function SplashScreen(props) {
+function SplashScreen() {
+  const navigation = useNavigation();
   useEffect(() => {
     checkToken();
   }, []);
@@ -12,9 +14,9 @@ function SplashScreen(props) {
 
     setTimeout(() => {
       if (token) {
-        props.navigation.navigate('AppScreen');
+        navigation.navigate('AppScreen');
       } else {
-        props.navigation.navigate('AuthScreen');
+        navigation.navigate('AuthScreen');
       }
     }, 1500);
   };

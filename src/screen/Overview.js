@@ -11,11 +11,19 @@ import {
 import Svg, {Rect} from 'react-native-svg';
 import {useNavigation} from '@react-navigation/native';
 
-function Overview(props) {
+function Overview() {
   const navigation = useNavigation();
 
-  const handleSend = () => {
-    props.navigation.navigate('UpdatePassword');
+  const handleTransaction = () => {
+    navigation.navigate('Transaction');
+  };
+
+  const handlePlanning = () => {
+    navigation.navigate('Planning');
+  };
+
+  const handleSettings = () => {
+    navigation.navigate('Settings');
   };
 
   // function getRandomColor() {
@@ -401,6 +409,87 @@ function Overview(props) {
             </Text>
           </View>
         </View>
+      </View>
+      {/* Bottom NAV */}
+      <View
+        style={{
+          width: '100%',
+          height: 80,
+          backgroundColor: '#FCFCFD',
+          borderWidth: 1,
+          borderColor: '#EAE9F0',
+          position: 'absolute',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          paddingHorizontal: 24,
+        }}>
+        <View style={{display: 'flex', alignItems: 'center'}}>
+          <Image
+            source={require('../assets/icons/overview_active.png')} // Ganti dengan path gambar Anda
+            style={{width: 24, height: 24}}
+          />
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: 500,
+              color: '#0161FD',
+            }}>
+            Overview
+          </Text>
+        </View>
+        <TouchableOpacity
+          onPress={handleTransaction}
+          style={{display: 'flex', alignItems: 'center'}}>
+          <Image
+            source={require('../assets/icons/transaction.png')} // Ganti dengan path gambar Anda
+            style={{width: 24, height: 24}}
+          />
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: 500,
+              color: '#AEABC2',
+            }}>
+            Transaction
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={handlePlanning}
+          style={{display: 'flex', alignItems: 'center'}}>
+          <Image
+            source={require('../assets/icons/planning.png')} // Ganti dengan path gambar Anda
+            style={{width: 24, height: 24}}
+          />
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: 500,
+              color: '#AEABC2',
+            }}>
+            Planning
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={handleSettings}
+          style={{display: 'flex', alignItems: 'center'}}>
+          <Image
+            source={require('../assets/icons/settings.png')} // Ganti dengan path gambar Anda
+            style={{width: 24, height: 24}}
+          />
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: 500,
+              color: '#AEABC2',
+            }}>
+            Settings
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

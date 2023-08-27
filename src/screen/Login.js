@@ -9,23 +9,21 @@ import {
   StyleSheet,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-// import Card from '../../components/Card';
-// import styles from './styles';
 
-function Login(props) {
+function Login() {
   const navigation = useNavigation();
   const handleLogin = () => {
-    props.navigation.navigate('AppScreen', {
+    navigation.navigate('AppScreen', {
       screen: 'Home',
     });
   };
 
   const handleRegister = () => {
-    props.navigation.navigate('Register');
+    navigation.navigate('Register');
   };
 
   const handleForgot = () => {
-    props.navigation.navigate('ForgotPassword');
+    navigation.navigate('ForgotPassword');
   };
 
   const [inputValue, setInputValue] = useState('');

@@ -10,11 +10,11 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-function UpdatePassword(props) {
+function UpdatePassword() {
   const navigation = useNavigation();
 
   const handleSubmit = () => {
-    props.navigation.navigate('Login');
+    navigation.navigate('Login');
   };
 
   const [inputValue, setInputValue] = useState('');
