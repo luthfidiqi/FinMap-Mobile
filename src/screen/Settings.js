@@ -13,6 +13,22 @@ import {useNavigation} from '@react-navigation/native';
 function Settings() {
   const navigation = useNavigation();
 
+  const handlePassword = () => {
+    navigation.navigate('UpdatePassword');
+  };
+
+  const handleHelp = () => {
+    navigation.navigate('HelpCenter');
+  };
+
+  const handleAbout = () => {
+    navigation.navigate('About');
+  };
+
+  const handleLogout = () => {
+    navigation.navigate('Onboarding');
+  };
+
   const handleOverview = () => {
     navigation.navigate('Overview');
   };
@@ -72,7 +88,7 @@ function Settings() {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          // onPress={handle}
+          onPress={handlePassword}
           style={{
             paddingVertical: 18,
             flexDirection: 'row',
@@ -92,7 +108,7 @@ function Settings() {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          // onPress={handle}
+          onPress={handleHelp}
           style={{
             paddingVertical: 18,
             flexDirection: 'row',
@@ -111,7 +127,7 @@ function Settings() {
             Help
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity
+        {/* <TouchableOpacity
           // onPress={handle}
           style={{
             paddingVertical: 18,
@@ -130,7 +146,7 @@ function Settings() {
             }}>
             Notifications
           </Text>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity
           // onPress={handle}
           style={{
@@ -159,7 +175,7 @@ function Settings() {
             marginVertical: 18,
           }}></View>
         <TouchableOpacity
-          // onPress={handle}
+          onPress={handleAbout}
           style={{
             paddingVertical: 18,
           }}>
@@ -173,7 +189,7 @@ function Settings() {
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-          // onPress={handle}
+          onPress={handleLogout}
           style={{
             paddingVertical: 18,
           }}>

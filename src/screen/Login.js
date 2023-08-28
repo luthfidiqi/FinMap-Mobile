@@ -14,7 +14,7 @@ function Login() {
   const navigation = useNavigation();
   const handleLogin = () => {
     navigation.navigate('AppScreen', {
-      screen: 'Home',
+      screen: 'Overview',
     });
   };
 

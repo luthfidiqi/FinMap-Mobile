@@ -7,6 +7,9 @@ import Overview from '../screen/Overview';
 import Settings from '../screen/Settings';
 import Planning from '../screen/Planning';
 import Transaction from '../screen/Transaction';
+import UpdatePassword from '../screen/UpdatePassword';
+import HelpCenter from '../screen/HelpCenter';
+import About from '../screen/About';
 
 export default function AppNavigator() {
   return (
@@ -35,6 +38,27 @@ export default function AppNavigator() {
       <Stack.Screen
         component={Transaction}
         name="Transaction"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={UpdatePassword}
+        name="UpdatePassword"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={HelpCenter}
+        name="HelpCenter"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={About}
+        name="About"
         options={{
           headerShown: false,
         }}
