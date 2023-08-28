@@ -13,6 +13,10 @@ import {useNavigation} from '@react-navigation/native';
 function Settings() {
   const navigation = useNavigation();
 
+  const handleProfile = () => {
+    navigation.navigate('Profile');
+  };
+
   const handlePassword = () => {
     navigation.navigate('UpdatePassword');
   };
@@ -69,7 +73,7 @@ function Settings() {
           </View>
         </View>
         <TouchableOpacity
-          // onPress={handle}
+          onPress={handleProfile}
           style={{
             paddingVertical: 16,
             backgroundColor: '#E6EFFF',

@@ -10,6 +10,7 @@ import Transaction from '../screen/Transaction';
 import UpdatePassword from '../screen/UpdatePassword';
 import HelpCenter from '../screen/HelpCenter';
 import About from '../screen/About';
+import Profile from '../screen/Profile';
 
 export default function AppNavigator() {
   return (
@@ -59,6 +60,13 @@ export default function AppNavigator() {
       <Stack.Screen
         component={About}
         name="About"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={Profile}
+        name="Profile"
         options={{
           headerShown: false,
         }}
