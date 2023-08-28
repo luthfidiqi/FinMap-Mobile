@@ -72,8 +72,8 @@ function LoginScreen() {
                   lineHeight: 35,
                   marginBottom: 30,
                   fontSize: 24,
-                  fontWeight: 800,
                   color: '#090A0A',
+                  fontFamily: 'Inter-Bold',
                 }}>
                 {item.text}
               </Text>
