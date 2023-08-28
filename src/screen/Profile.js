@@ -15,7 +15,7 @@ function Profile() {
   const navigation = useNavigation();
 
   const handleSubmit = () => {
-    navigation.navigate('Login');
+    navigation.navigate('Settings');
   };
 
   const [inputValue, setInputValue] = useState('');
