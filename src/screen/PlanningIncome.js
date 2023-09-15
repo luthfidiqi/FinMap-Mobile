@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-function Planning() {
+function PlanningIncome() {
   const navigation = useNavigation();
 
   const handleOverview = () => {
@@ -25,12 +25,12 @@ function Planning() {
     navigation.navigate('Settings');
   };
 
-  const handleIncome = () => {
-    navigation.navigate('PlanningIncome');
+  const handleExpense = () => {
+    navigation.navigate('Planning');
   };
 
   const handleAdd = () => {
-    navigation.navigate('PlanningIncome');
+    navigation.navigate('Planning');
   };
 
   return (
@@ -56,6 +56,23 @@ function Planning() {
             borderBottomColor: '#EAE9F0',
           }}>
           <TouchableOpacity
+            onPress={handleExpense}
+            style={{
+              width: '50%',
+              padding: 10,
+              display: 'flex',
+              alignItems: 'center',
+            }}>
+            <Text
+              style={{
+                fontSize: 16,
+                fontWeight: 600,
+                color: '#2C283E',
+              }}>
+              Expense
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
             onPress={handleOverview}
             style={{
               width: '50%',
@@ -70,23 +87,6 @@ function Planning() {
                 fontSize: 16,
                 fontWeight: 600,
                 color: '#0161FD',
-              }}>
-              Expense
-            </Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={handleIncome}
-            style={{
-              width: '50%',
-              padding: 10,
-              display: 'flex',
-              alignItems: 'center',
-            }}>
-            <Text
-              style={{
-                fontSize: 16,
-                fontWeight: 600,
-                color: '#2C283E',
               }}>
               Income
             </Text>
@@ -121,14 +121,14 @@ function Planning() {
                   width: 45,
                   height: 45,
                   borderRadius: 14,
-                  backgroundColor: '#FF414C',
+                  backgroundColor: '#23C16B',
                   marginRight: 10,
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
                 <Image
-                  source={require('../assets/icon_livingCost.png')}
+                  source={require('../assets/icons/income/salary.png')}
                   style={{width: 24, height: 24}}
                 />
               </View>
@@ -138,7 +138,7 @@ function Planning() {
                   fontWeight: 500,
                   color: '#2C2646',
                 }}>
-                Living Cost
+                Salary
               </Text>
             </View>
           </View>
@@ -171,14 +171,14 @@ function Planning() {
                   width: 45,
                   height: 45,
                   borderRadius: 14,
-                  backgroundColor: '#FF414C',
+                  backgroundColor: '#23C16B',
                   marginRight: 10,
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
                 <Image
-                  source={require('../assets/icons/expense/entertain.png')}
+                  source={require('../assets/icons/income/gift.png')}
                   style={{width: 24, height: 24}}
                 />
               </View>
@@ -188,7 +188,7 @@ function Planning() {
                   fontWeight: 500,
                   color: '#2C2646',
                 }}>
-                Entertainment
+                Gifts
               </Text>
             </View>
           </View>
@@ -221,14 +221,14 @@ function Planning() {
                   width: 45,
                   height: 45,
                   borderRadius: 14,
-                  backgroundColor: '#FF414C',
+                  backgroundColor: '#23C16B',
                   marginRight: 10,
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
                 <Image
-                  source={require('../assets/icons/expense/gift.png')}
+                  source={require('../assets/icons/income/selling.png')}
                   style={{width: 24, height: 24}}
                 />
               </View>
@@ -238,7 +238,7 @@ function Planning() {
                   fontWeight: 500,
                   color: '#2C2646',
                 }}>
-                Gifts & Donations
+                Selling
               </Text>
             </View>
           </View>
@@ -271,14 +271,14 @@ function Planning() {
                   width: 45,
                   height: 45,
                   borderRadius: 14,
-                  backgroundColor: '#FF414C',
+                  backgroundColor: '#23C16B',
                   marginRight: 10,
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
                 <Image
-                  source={require('../assets/icons/expense/education.png')}
+                  source={require('../assets/icons/income/award.png')}
                   style={{width: 24, height: 24}}
                 />
               </View>
@@ -288,7 +288,7 @@ function Planning() {
                   fontWeight: 500,
                   color: '#2C2646',
                 }}>
-                Education
+                Award
               </Text>
             </View>
           </View>
@@ -321,14 +321,14 @@ function Planning() {
                   width: 45,
                   height: 45,
                   borderRadius: 14,
-                  backgroundColor: '#FF414C',
+                  backgroundColor: '#23C16B',
                   marginRight: 10,
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
                 }}>
                 <Image
-                  source={require('../assets/icons/expense/investment.png')}
+                  source={require('../assets/icons/income/interest.png')}
                   style={{width: 24, height: 24}}
                 />
               </View>
@@ -338,7 +338,7 @@ function Planning() {
                   fontWeight: 500,
                   color: '#2C2646',
                 }}>
-                Investment
+                Interest Money
               </Text>
             </View>
           </View>
@@ -453,4 +453,4 @@ function Planning() {
 
 const styles = StyleSheet.create({});
 
-export default Planning;
+export default PlanningIncome;

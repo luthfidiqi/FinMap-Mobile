@@ -11,6 +11,7 @@ import UpdatePassword from '../screen/UpdatePassword';
 import HelpCenter from '../screen/HelpCenter';
 import About from '../screen/About';
 import Profile from '../screen/Profile';
+import PlanningIncome from '../screen/PlanningIncome';
 
 export default function AppNavigator() {
   return (
@@ -32,6 +33,13 @@ export default function AppNavigator() {
       <Stack.Screen
         component={Planning}
         name="Planning"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={PlanningIncome}
+        name="PlanningIncome"
         options={{
           headerShown: false,
         }}
