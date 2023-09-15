@@ -25,10 +25,36 @@ function Transaction() {
     navigation.navigate('Settings');
   };
 
+  const handleAdd = () => {
+    navigation.navigate('Settings');
+  };
+
   return (
     <View style={{flex: 1, backgroundColor: '#FFFFFF', height: '100%'}}>
       <View style={{marginTop: 40, marginHorizontal: 24}}></View>
       <Text>Transaction</Text>
+      {/* Button Add */}
+      <View>
+        <TouchableOpacity
+          onPress={handleAdd}
+          style={{
+            width: 52,
+            height: 52,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            backgroundColor: '#0161FD',
+            borderRadius: 28,
+            position: 'absolute',
+            top: 100,
+            right: 24,
+          }}>
+          <Image
+            source={require('../assets/icon_add.png')}
+            style={{width: 20, height: 20}}
+          />
+        </TouchableOpacity>
+      </View>
       {/* Bottom NAV */}
       <View
         style={{
