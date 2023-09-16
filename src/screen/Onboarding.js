@@ -50,7 +50,7 @@ function LoginScreen() {
     <View style={{flex: 1, backgroundColor: '#FFFFFF'}}>
       <View style={{alignItems: 'center', height: '100%'}}>
         <Image
-          source={require('../assets/logo_onboard.png')} // Ganti dengan path gambar Anda
+          source={require('../assets/logo_onboard.png')}
           style={styles.image}
         />
         <Carousel

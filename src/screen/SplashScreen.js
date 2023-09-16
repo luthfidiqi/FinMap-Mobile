@@ -23,11 +23,11 @@ function SplashScreen() {
 
   return (
     <ImageBackground
-      source={require('../assets/splash_screen_bg.png')} // Ganti dengan path gambar latar belakang Anda
+      source={require('../assets/splash_screen_bg.png')}
       style={styles.background}>
       <View style={styles.container}>
         <Image
-          source={require('../assets/splash_screen_logo.png')} // Ganti dengan path gambar Anda
+          source={require('../assets/splash_screen_logo.png')}
           style={styles.image}
         />
       </View>
@@ -38,7 +38,7 @@ function SplashScreen() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    resizeMode: 'cover', // Atur bagaimana gambar latar belakang menyesuaikan ruang
+    resizeMode: 'cover',
     justifyContent: 'center',
     alignItems: 'center',
   },

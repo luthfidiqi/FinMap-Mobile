@@ -341,7 +341,7 @@ function Overview() {
                     alignItems: 'center',
                   }}>
                   <Image
-                    source={require('../assets/icon_livingCost.png')} // Ganti dengan path gambar Anda
+                    source={require('../assets/icon_livingCost.png')}
                     style={{width: 24, height: 24}}
                   />
                 </View>
@@ -409,7 +409,7 @@ function Overview() {
                     alignItems: 'center',
                   }}>
                   <Image
-                    source={require('../assets/icon_livingCost.png')} // Ganti dengan path gambar Anda
+                    source={require('../assets/icon_livingCost.png')}
                     style={{width: 24, height: 24}}
                   />
                 </View>
@@ -454,7 +454,7 @@ function Overview() {
         }}>
         <View style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/overview_active.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/overview_active.png')}
             style={{width: 24, height: 24}}
           />
           <Text
@@ -470,7 +470,7 @@ function Overview() {
           onPress={handleTransaction}
           style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/transaction.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/transaction.png')}
             style={{width: 24, height: 24}}
           />
           <Text
@@ -486,7 +486,7 @@ function Overview() {
           onPress={handlePlanning}
           style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/planning.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/planning.png')}
             style={{width: 24, height: 24}}
           />
           <Text
@@ -502,7 +502,7 @@ function Overview() {
           onPress={handleSettings}
           style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/settings.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/settings.png')}
             style={{width: 24, height: 24}}
           />
           <Text

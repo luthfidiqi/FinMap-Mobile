@@ -55,7 +55,7 @@ function About() {
             }}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
               <Image
-                source={require('../assets/back_icon.png')} // Ganti dengan path gambar Anda
+                source={require('../assets/back_icon.png')}
                 style={{
                   marginHorizontal: 24,
                   height: 30,
@@ -184,7 +184,7 @@ function About() {
             onPress={handleOverview}
             style={{display: 'flex', alignItems: 'center'}}>
             <Image
-              source={require('../assets/icons/overview.png')} // Ganti dengan path gambar Anda
+              source={require('../assets/icons/overview.png')}
               style={{width: 24, height: 24}}
             />
             <Text
@@ -200,7 +200,7 @@ function About() {
             onPress={handleTransaction}
             style={{display: 'flex', alignItems: 'center'}}>
             <Image
-              source={require('../assets/icons/transaction.png')} // Ganti dengan path gambar Anda
+              source={require('../assets/icons/transaction.png')}
               style={{width: 24, height: 24}}
             />
             <Text
@@ -216,7 +216,7 @@ function About() {
             onPress={handlePlanning}
             style={{display: 'flex', alignItems: 'center'}}>
             <Image
-              source={require('../assets/icons/planning.png')} // Ganti dengan path gambar Anda
+              source={require('../assets/icons/planning.png')}
               style={{width: 24, height: 24}}
             />
             <Text
@@ -230,7 +230,7 @@ function About() {
           </TouchableOpacity>
           <View style={{display: 'flex', alignItems: 'center'}}>
             <Image
-              source={require('../assets/icons/settings_active.png')} // Ganti dengan path gambar Anda
+              source={require('../assets/icons/settings_active.png')}
               style={{width: 24, height: 24}}
             />
             <Text

@@ -38,7 +38,7 @@ function Register() {
         <View>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image
-              source={require('../assets/back_icon.png')} // Ganti dengan path gambar Anda
+              source={require('../assets/back_icon.png')}
               style={{
                 height: 30,
                 width: 30,

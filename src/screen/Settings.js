@@ -50,7 +50,7 @@ function Settings() {
       <View style={{marginTop: 40, marginHorizontal: 24}}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/user_photo_default.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/user_photo_default.png')}
             style={{width: 64, height: 64, borderRadius: 99, marginRight: 16}}
           />
           <View>
@@ -99,7 +99,7 @@ function Settings() {
             alignItems: 'center',
           }}>
           <Image
-            source={require('../assets/icons/user_pass.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/user_pass.png')}
             style={{width: 24, height: 24, marginRight: 12}}
           />
           <Text
@@ -119,7 +119,7 @@ function Settings() {
             alignItems: 'center',
           }}>
           <Image
-            source={require('../assets/icons/user_help.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/user_help.png')}
             style={{width: 24, height: 24, marginRight: 12}}
           />
           <Text
@@ -139,7 +139,7 @@ function Settings() {
             alignItems: 'center',
           }}>
           <Image
-            source={require('../assets/icons/user_notif.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/user_notif.png')} 
             style={{width: 24, height: 24, marginRight: 12}}
           />
           <Text
@@ -159,7 +159,7 @@ function Settings() {
             alignItems: 'center',
           }}>
           <Image
-            source={require('../assets/icons/user_rate.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/user_rate.png')}
             style={{width: 24, height: 24, marginRight: 12}}
           />
           <Text
@@ -229,7 +229,7 @@ function Settings() {
           onPress={handleOverview}
           style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/overview.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/overview.png')}
             style={{width: 24, height: 24}}
           />
           <Text
@@ -245,7 +245,7 @@ function Settings() {
           onPress={handleTransaction}
           style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/transaction.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/transaction.png')}
             style={{width: 24, height: 24}}
           />
           <Text
@@ -261,7 +261,7 @@ function Settings() {
           onPress={handlePlanning}
           style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/planning.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/planning.png')}
             style={{width: 24, height: 24}}
           />
           <Text
@@ -275,7 +275,7 @@ function Settings() {
         </TouchableOpacity>
         <View style={{display: 'flex', alignItems: 'center'}}>
           <Image
-            source={require('../assets/icons/settings_active.png')} // Ganti dengan path gambar Anda
+            source={require('../assets/icons/settings_active.png')}
             style={{width: 24, height: 24}}
           />
           <Text

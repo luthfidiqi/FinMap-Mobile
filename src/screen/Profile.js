@@ -56,7 +56,7 @@ function Profile() {
             }}>
             <TouchableOpacity onPress={() => navigation.goBack()}>
               <Image
-                source={require('../assets/back_icon.png')} // Ganti dengan path gambar Anda
+                source={require('../assets/back_icon.png')}
                 style={{
                   marginHorizontal: 24,
                   height: 30,
@@ -81,7 +81,7 @@ function Profile() {
           </View>
           <View style={{alignItems: 'center', backgroundColor: '#FFFFFF'}}>
             <Image
-              source={require('../assets/icons/user_photo_default.png')} // Ganti dengan path gambar Anda
+              source={require('../assets/icons/user_photo_default.png')}
               style={{
                 width: 64,
                 height: 64,
