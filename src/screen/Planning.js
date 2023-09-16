@@ -357,7 +357,7 @@ function Planning() {
             backgroundColor: '#0161FD',
             borderRadius: 28,
             position: 'fixed',
-            bottom: '200%',
+            bottom: '100%',
             left: '82%',
             zIndex: 2,
           }}>

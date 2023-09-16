@@ -17,7 +17,7 @@ function AddPlanning() {
   const navigation = useNavigation();
 
   const handleBack = () => {
-    navigation.navigate('Transaction');
+    navigation.navigate('Planning');
   };
 
   const [inputValue, setInputValue] = useState('');
