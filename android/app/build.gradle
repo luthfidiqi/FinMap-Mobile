@@ -73,9 +73,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.bootcamp"
+    namespace "com.FinMap"
     defaultConfig {
-        applicationId "com.bootcamp"
+        applicationId "com.FinMap"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

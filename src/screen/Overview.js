@@ -28,7 +28,7 @@ function Overview() {
   };
 
   const handleAI = () => {
-    navigation.navigate('Settings');
+    navigation.navigate('Overview');
   };
 
   // function getRandomColor() {

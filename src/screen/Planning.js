@@ -356,9 +356,10 @@ function Planning() {
             justifyContent: 'center',
             backgroundColor: '#0161FD',
             borderRadius: 28,
-            position: 'absolute',
-            top: 100,
-            right: 24,
+            position: 'fixed',
+            bottom: '200%',
+            left: '82%',
+            zIndex: 2,
           }}>
           <Image
             source={require('../assets/icon_add.png')}
