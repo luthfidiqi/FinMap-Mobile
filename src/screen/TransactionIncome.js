@@ -12,7 +12,7 @@ import {
 import {useNavigation} from '@react-navigation/native';
 import Pie from 'react-native-pie';
 
-function Transaction() {
+function TransactionIncome() {
   const navigation = useNavigation();
 
   const handleOverview = () => {
@@ -31,8 +31,8 @@ function Transaction() {
     navigation.navigate('Settings');
   };
 
-  const handleIncome = () => {
-    navigation.navigate('TransactionIncome');
+  const handleExpense = () => {
+    navigation.navigate('Transaction');
   };
 
   return (
@@ -140,21 +140,8 @@ function Transaction() {
                 borderRadius: 99,
                 flexDirection: 'row',
               }}>
-              <Text
-                style={{
-                  width: '50%',
-                  fontSize: 16,
-                  fontWeight: 'bold',
-                  color: '#FFFFFF',
-                  textAlign: 'center',
-                  backgroundColor: '#0161FD',
-                  borderRadius: 99,
-                  paddingVertical: 8,
-                }}>
-                Expense
-              </Text>
               <TouchableOpacity
-                onPress={handleIncome}
+                onPress={handleExpense}
                 style={{
                   width: '50%',
                   backgroundColor: '#E3ECFD',
@@ -168,9 +155,22 @@ function Transaction() {
                     color: '#0161FD',
                     textAlign: 'center',
                   }}>
-                  Income
+                  Expense
                 </Text>
               </TouchableOpacity>
+              <Text
+                style={{
+                  width: '50%',
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#FFFFFF',
+                  textAlign: 'center',
+                  backgroundColor: '#0161FD',
+                  borderRadius: 99,
+                  paddingVertical: 8,
+                }}>
+                Income
+              </Text>
             </View>
             {/* Donnut Chart */}
             <View style={{marginVertical: 25, alignItems: 'center'}}>
@@ -180,16 +180,12 @@ function Transaction() {
                   innerRadius={65}
                   sections={[
                     {
-                      percentage: 50,
+                      percentage: 85,
                       color: '#6347EB',
                     },
                     {
-                      percentage: 30,
+                      percentage: 15,
                       color: '#F46040',
-                    },
-                    {
-                      percentage: 20,
-                      color: '#56BADA',
                     },
                   ]}
                   dividerSize={6}
@@ -200,11 +196,11 @@ function Transaction() {
                     style={{
                       backgroundColor: 'transparent',
                       color: '#2C2646',
-                      fontSize: 16,
+                      fontSize: 14.5,
                       fontWeight: 'bold',
                       marginTop: 10,
                     }}>
-                    Rp 5.000.000
+                    Rp 10.000.000
                   </Text>
                   <Text
                     style={{
@@ -213,7 +209,7 @@ function Transaction() {
                       fontSize: 14,
                       fontWeight: 'bold',
                     }}>
-                    Expense
+                    Income
                   </Text>
                 </View>
               </View>
@@ -223,10 +219,10 @@ function Transaction() {
               <View
                 style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                 <Text style={{color: '#090A0A', fontSize: 14, fontWeight: 500}}>
-                  Living Cost (50%)
+                  Salary (85%)
                 </Text>
                 <Text style={{color: '#090A0A', fontSize: 14, fontWeight: 500}}>
-                  Rp 2.500.000
+                  Rp 8.500.000
                 </Text>
               </View>
               <View
@@ -241,7 +237,7 @@ function Transaction() {
                 <View
                   style={{
                     backgroundColor: '#6347EB',
-                    width: '50%',
+                    width: '85%',
                     height: 7,
                     borderRadius: 99,
                   }}></View>
@@ -251,7 +247,7 @@ function Transaction() {
               <View
                 style={{flexDirection: 'row', justifyContent: 'space-between'}}>
                 <Text style={{color: '#090A0A', fontSize: 14, fontWeight: 500}}>
-                  Entertainment (30%)
+                  Interest Money (15%)
                 </Text>
                 <Text style={{color: '#090A0A', fontSize: 14, fontWeight: 500}}>
                   Rp 1.500.000
@@ -269,35 +265,7 @@ function Transaction() {
                 <View
                   style={{
                     backgroundColor: '#F46040',
-                    width: '30%',
-                    height: 7,
-                    borderRadius: 99,
-                  }}></View>
-              </View>
-            </View>
-            <View>
-              <View
-                style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-                <Text style={{color: '#090A0A', fontSize: 14, fontWeight: 500}}>
-                  Gifts & Donations (20%)
-                </Text>
-                <Text style={{color: '#090A0A', fontSize: 14, fontWeight: 500}}>
-                  Rp 1.000.000
-                </Text>
-              </View>
-              <View
-                style={{
-                  marginTop: 10,
-                  marginBottom: 24,
-                  backgroundColor: '#E8EAED',
-                  width: '100%',
-                  height: 7,
-                  borderRadius: 99,
-                }}>
-                <View
-                  style={{
-                    backgroundColor: '#56BADA',
-                    width: '20%',
+                    width: '15%',
                     height: 7,
                     borderRadius: 99,
                   }}></View>
@@ -692,4 +660,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Transaction;
+export default TransactionIncome;
