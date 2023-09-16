@@ -68,7 +68,6 @@ function Transaction() {
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: 'space-between',
-                marginBottom: 18,
               }}>
               <View>
                 <Text
@@ -302,10 +301,11 @@ function Transaction() {
             style={{
               color: '#090A0A',
               fontWeight: 'bold',
-              fontSize: 26,
+              fontSize: 18,
+              marginTop: 5,
               marginBottom: 20,
             }}>
-            Transaction
+            Transaction History
           </Text>
           <View
             style={{
@@ -315,9 +315,38 @@ function Transaction() {
               borderWidth: 1,
               borderColor: '#EAE9F0',
               borderRadius: 18,
-              marginTop: 20,
-              marginBottom: 25,
+              marginBottom: 15,
             }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginTop: 3,
+              }}>
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: '#2C2646',
+                }}>
+                17 Agustus 2023
+              </Text>
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: '#FF414C',
+                }}>
+                - Rp 50.000
+              </Text>
+            </View>
+            <View
+              style={{
+                width: '100%',
+                height: 2,
+                backgroundColor: '#E3E5E5',
+                marginVertical: 12,
+              }}></View>
             <View
               style={{
                 display: 'flex',
@@ -343,18 +372,28 @@ function Transaction() {
                     alignItems: 'center',
                   }}>
                   <Image
-                    source={require('../assets/icon_livingCost.png')}
+                    source={require('../assets/icons/expense/entertain.png')}
                     style={{width: 24, height: 24}}
                   />
                 </View>
-                <Text
-                  style={{
-                    fontSize: 16,
-                    fontWeight: 500,
-                    color: '#2C2646',
-                  }}>
-                  Living Cost
-                </Text>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 500,
+                      color: '#2C2646',
+                    }}>
+                    Entertainment
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 400,
+                      color: '#2C2646',
+                    }}>
+                    Watch movie at cinema
+                  </Text>
+                </View>
               </View>
               <Text
                 style={{
@@ -362,7 +401,163 @@ function Transaction() {
                   fontWeight: 'bold',
                   color: '#FF414C',
                 }}>
-                - Rp 2.500.000
+                - Rp 50.000
+              </Text>
+            </View>
+            <View
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                marginTop: 10,
+              }}>
+              <View
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <View
+                  style={{
+                    width: 45,
+                    height: 45,
+                    borderRadius: 14,
+                    backgroundColor: '#FF414C',
+                    marginRight: 10,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('../assets/icon_livingCost.png')}
+                    style={{width: 24, height: 24}}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 500,
+                      color: '#2C2646',
+                    }}>
+                    Living Cost
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 400,
+                      color: '#2C2646',
+                    }}>
+                    Electricity bills
+                  </Text>
+                </View>
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#FF414C',
+                }}>
+                - Rp 150.000
+              </Text>
+            </View>
+          </View>
+          {/* Income */}
+          <View
+            style={{
+              width: '100%',
+              padding: 12,
+              backgroundColor: '#FCFCFD',
+              borderWidth: 1,
+              borderColor: '#EAE9F0',
+              borderRadius: 18,
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginTop: 3,
+              }}>
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: '#2C2646',
+                }}>
+                2 Agustus 2023
+              </Text>
+              <Text
+                style={{
+                  fontSize: 14,
+                  fontWeight: 'bold',
+                  color: '#23C16B',
+                }}>
+                + Rp 8.500.000
+              </Text>
+            </View>
+            <View
+              style={{
+                width: '100%',
+                height: 2,
+                backgroundColor: '#E3E5E5',
+                marginVertical: 12,
+              }}></View>
+            <View
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+              }}>
+              <View
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                }}>
+                <View
+                  style={{
+                    width: 45,
+                    height: 45,
+                    borderRadius: 14,
+                    backgroundColor: '#23C16B',
+                    marginRight: 10,
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}>
+                  <Image
+                    source={require('../assets/icons/income/salary.png')}
+                    style={{width: 24, height: 24}}
+                  />
+                </View>
+                <View>
+                  <Text
+                    style={{
+                      fontSize: 16,
+                      fontWeight: 500,
+                      color: '#2C2646',
+                    }}>
+                    Salary
+                  </Text>
+                  <Text
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 400,
+                      color: '#2C2646',
+                    }}>
+                    Main Income
+                  </Text>
+                </View>
+              </View>
+              <Text
+                style={{
+                  fontSize: 16,
+                  fontWeight: 'bold',
+                  color: '#23C16B',
+                }}>
+                + Rp 8.500.000
               </Text>
             </View>
           </View>
@@ -380,9 +575,10 @@ function Transaction() {
             justifyContent: 'center',
             backgroundColor: '#0161FD',
             borderRadius: 28,
-            position: 'absolute',
-            top: 100,
-            right: 24,
+            position: 'fixed',
+            bottom: '200%',
+            left: '82%',
+            zIndex: 2,
           }}>
           <Image
             source={require('../assets/icon_add.png')}
@@ -407,6 +603,7 @@ function Transaction() {
           justifyContent: 'space-between',
           alignItems: 'center',
           paddingHorizontal: 24,
+          zIndex: 3,
         }}>
         <TouchableOpacity
           onPress={handleOverview}
