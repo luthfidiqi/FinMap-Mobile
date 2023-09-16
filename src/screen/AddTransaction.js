@@ -19,6 +19,12 @@ function AddTransaction() {
     navigation.navigate('Transaction');
   };
 
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = text => {
+    setInputValue(text);
+  };
+
   return (
     <View
       style={{
@@ -68,16 +74,20 @@ function AddTransaction() {
             }}>
             Transaction Amount
           </Text>
-          <Text
+          <TextInput
             style={{
               marginTop: 12,
               fontSize: 28,
               fontFamily: 'Inter-Medium',
-              color: '#72777A',
               fontWeight: 'bold',
-            }}>
-            Rp 0
-          </Text>
+              padding: 0,
+            }}
+            value={inputValue}
+            onChangeText={handleInputChange}
+            placeholder="Rp 0"
+            placeholderTextColor="#72777A"
+            keyboardType="numeric"
+          />
           <View
             style={{
               width: '100%',

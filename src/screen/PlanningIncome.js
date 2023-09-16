@@ -30,7 +30,7 @@ function PlanningIncome() {
   };
 
   const handleAdd = () => {
-    navigation.navigate('Planning');
+    navigation.navigate('AddPlanning');
   };
 
   return (

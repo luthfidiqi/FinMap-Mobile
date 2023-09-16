@@ -14,6 +14,7 @@ import Profile from '../screen/Profile';
 import PlanningIncome from '../screen/PlanningIncome';
 import TransactionIncome from '../screen/TransactionIncome';
 import AddTransaction from '../screen/AddTransaction';
+import AddPlanning from '../screen/AddPlanning';
 
 export default function AppNavigator() {
   return (
@@ -42,6 +43,13 @@ export default function AppNavigator() {
       <Stack.Screen
         component={PlanningIncome}
         name="PlanningIncome"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={AddPlanning}
+        name="AddPlanning"
         options={{
           headerShown: false,
         }}
