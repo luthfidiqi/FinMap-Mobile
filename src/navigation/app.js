@@ -13,6 +13,7 @@ import About from '../screen/About';
 import Profile from '../screen/Profile';
 import PlanningIncome from '../screen/PlanningIncome';
 import TransactionIncome from '../screen/TransactionIncome';
+import AddTransaction from '../screen/AddTransaction';
 
 export default function AppNavigator() {
   return (
@@ -55,6 +56,13 @@ export default function AppNavigator() {
       <Stack.Screen
         component={TransactionIncome}
         name="TransactionIncome"
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        component={AddTransaction}
+        name="AddTransaction"
         options={{
           headerShown: false,
         }}

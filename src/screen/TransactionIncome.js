@@ -28,7 +28,7 @@ function TransactionIncome() {
   };
 
   const handleAdd = () => {
-    navigation.navigate('Settings');
+    navigation.navigate('AddTransaction');
   };
 
   const handleExpense = () => {
@@ -256,7 +256,7 @@ function TransactionIncome() {
               <View
                 style={{
                   marginTop: 10,
-                  marginBottom: 24,
+                  marginBottom: 14,
                   backgroundColor: '#E8EAED',
                   width: '100%',
                   height: 7,
